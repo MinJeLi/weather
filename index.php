@@ -2,8 +2,7 @@
 
 function Weather($p){
 
-	$text = "";
-	$user_name = "";
+	$SetToken = "l3SS4ioOoets";
 
 	if (isset($p["text"])) {
 			$text = strval($p["text"]);
@@ -13,7 +12,7 @@ function Weather($p){
 			$token = strval($p["token"]);
 	}
 	
-	if ($token != "l3SS4ioOoets"){
+	if ($token != $SetToken){
 		exit("~想亂來？~");
 	}
 	
